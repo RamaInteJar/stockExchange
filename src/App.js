@@ -5,15 +5,17 @@ import Homepage from "./pages/Homepage";
 import About from "./pages/About";
 import Stocklisting from "./pages/Stocklisting";
 import { Route, Routes } from "react-router-dom";
+import Stocks from "./components/Stocks";
 
-function App() {
+const App=()=>{
   return (
     <div>
         <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/About" element={<About />} />
-        <Route path="/Stocklisting" element={<Stocklisting />}/>
+        <Route path="/tocks" element={<Stocklisting />}/>
+        <Route path="/Stocks/:symbol" element={<Stocks Stocks={Stocks}/>}/>
       </Routes>
     </div>
   );
