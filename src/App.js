@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Stocklisting from "./pages/Stocklisting";
 import { Route, Routes } from "react-router-dom";
 import Stocks from "./components/Stocks";
+import Stock from "./pages/Stock";
 
 const App=()=>{
   return (
@@ -14,8 +15,8 @@ const App=()=>{
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/About" element={<About />} />
-        <Route path="/tocks" element={<Stocklisting />}/>
-        <Route path="/Stocks/:symbol" element={<Stocks Stocks={Stocks}/>}/>
+        <Route path="/Stock" element={<Stock />} />
+        <Route path="/Stocks/:symbol" element={<Stocklisting Stocks={Stocks}/>}/>
       </Routes>
     </div>
   );

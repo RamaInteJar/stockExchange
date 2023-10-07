@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(169, 175, 173);
 }
 
 code {
@@ -15,7 +16,7 @@ code {
 nav{
   height: 80px;
   width: 100%;
-  background-color: #0b48c2;
+  background-color: rgba(5, 234, 51, 0.7);
   display:flex;
   justify-content: space-around;
   font-size: 24px;
@@ -27,14 +28,22 @@ nav{
 }
 
 th {
-  background-color: #e66565;
+  background-color: #3609eb;
   text-align: center;
-  border: 4px solid #05ea33;
+  border: 4px solid rgb(5, 234, 51);
   font-size: 30px;
+  color: bisque;
 }
 
 td{
   text-align: center;
   line-height: 50px;
   font-size: 24px;
+}
+
+.active{
+  text-align: center;
+  font-size: 50px;
+  color: aqua;
+  font:600;
 }
