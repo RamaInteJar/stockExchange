@@ -2,10 +2,10 @@ import React from 'react';
 import stockData from '../components/Stocks';
 import { Link } from 'react-router-dom';
 
-const Home = () => {
+const Homepage = () => {
   return (
     <div>
-      <h1>Most Active Stocks</h1>
+      <h1 className='active'>Active Stocks</h1>
       <table className="stockTable">
         <thead>
           <tr>
@@ -38,4 +38,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default Homepage;
